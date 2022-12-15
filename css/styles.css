@@ -103,6 +103,7 @@ overflow: hidden;
 
 .hero .btn {
     display: inline-block;
+    font-family: 'Roboto', sans-serif;
     background: var(--accent-color);
     color: var(--main-white);
     font-size: 16px;
@@ -182,6 +183,7 @@ overflow: hidden;
 
 .portfolio-btn {
     display: inline-block;
+    font-family: 'Roboto', sans-serif;
     background: var(--cloud-color);
     color: var(--accent-color);
     font-size: 16px;
