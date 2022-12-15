@@ -1,34 +1,186 @@
-.logo-web {
-    font-family: 'Raleway';
-    font-style: normal;
-    color: #4D5AE5;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    width: 44px;
-    height: 24px;
-    letter-spacing: 0.03em;
-    order: 0;
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --main-bg-color: #E5E5E5;
+    --accent-color: #4D5AE5;
+    --main-white: #ffffff;
+    --cloud-color: #F4F4FD;
+    --cornflower-color: #E7E9FC;
 }
 
-.logo-studio {
-    font-family: 'Raleway';
-    color: #2E2F42;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    width: 71px;
-    height: 24px;
-    letter-spacing: 0.03em;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--primary-text-color);
 }
 
-a {
+.link {
     text-decoration: none;
 }
 
-ul {
+.list {
     list-style-type: none;
+}
+
+.title {
+    color: var(--title-text-color);
+}
+
+.header {
+    background-color: var(--main-white);
+}
+
+/* Логотип */
+.logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+.logo-studio {
+    color: var(--title-text-color);
+}
+
+/* Навігація сайту */
+.nav-menu {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.nav-menu-item {
+    color: var(--title-text-color);
+}
+
+.nav-menu-item:hover,
+.nav-menu-item:focus {
+    color: var(--accent-color);
+}
+
+.nav-address {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.address-item {
+    color: var(--primary-text-color);
+}
+
+.address-item:hover,
+.address-item:focus {
+    color: var(--accent-color);
+}
+
+/* Герой */
+.hero {
+    background-color: var(--title-text-color);
+}
+
+.hero .title {
+    color: var(--main-white);
+    font-size: 56px;
+    text-align: center;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--main-white);
+    font-size: 16px;
+    line-height: 1.19;
+    font-weight: 600;
+    padding: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+}
+
+.hero .btn:hover,
+.hero .btn:focus {
+    background: #404BBF;
+}
+
+/* Блок "Наші переваги" */
+.advant .title,
+.portfolio .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.advant .text,
+.team .text,
+.portfolio .text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.works .title,
+.team .title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+/* Команда */
+.team {
+    background-color: var(--cloud-color);
+}
+
+.person-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+/* Футер */
+.footer {
+    background-color: var(--title-text-color);
+}
+
+.footer .logo-studio {
+    color: var(--main-white);
+}
+
+.footer .text {
+    color: var(--cornflower-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Сторінка Портфоліо */
+.portfolio-sec {
+    background: var(--main-bg-color);
+}
+
+.portfolio-btn {
+    display: inline-block;
+    background: var(--cloud-color);
+    color: var(--accent-color);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    border: 1px solid var(--cornflower-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background: var(--accent-color);
+    color: var(--main-white);
 }
